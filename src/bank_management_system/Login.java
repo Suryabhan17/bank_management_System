@@ -44,7 +44,7 @@ public class Login extends JFrame {
         add(PinTextField);
         
         JButton login=new JButton("SIGN IN");
-        login.setBounds(300,300,100,30);
+        login.setBounds(270,300,100,30);
         login.setBackground(Color.BLACK);
         login.setForeground(Color.WHITE);
         add(login);
@@ -58,8 +58,8 @@ public class Login extends JFrame {
 
 
          
-        JButton signup=new JButton("CLEAR");
-        signup.setBounds(430,300,100,30);
+        JButton signup=new JButton("SIGN UP");
+        signup.setBounds(270,350,255,30);
         signup.setBackground(Color.BLACK);
         signup.setForeground(Color.WHITE);
         add(signup);
