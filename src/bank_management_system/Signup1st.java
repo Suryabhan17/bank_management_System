@@ -172,8 +172,10 @@ add(dateChooser);
     add(pinTextField);
 
      JButton next = new JButton("Next");
+     next.setBackground(Color.BLACK);
+     next.setForeground(Color.WHITE);
         next.setFont(new Font("Raleway", Font.BOLD, 20));
-        next.setBounds(620, 650, 100, 40);
+        next.setBounds(620, 660, 80, 30);
         add(next);
 
  
