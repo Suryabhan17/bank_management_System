@@ -91,7 +91,8 @@ JPasswordField PinTextField;
 
 
         } else if (ae.getSource()== signup){
-
+        setVisible(false);
+           new Signup1st().setVisible(true);
         }
 
     }

@@ -1,7 +1,7 @@
 package bank_management_system;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Taskbar.State;
+
 import java.util.*;
 import com.toedter.calendar.JDateChooser;
 import java.awt.event.*;
@@ -100,7 +100,7 @@ add(dateChooser);
         genderGroup.add(other1);
 
 
-    JLabel email=new JLabel("Email Address:");
+    JLabel email=new JLabel("Email:");
     email.setFont(new Font("Raleway",Font.BOLD,20));
     email.setBounds(100,340,200,30);
     add(email);
@@ -253,11 +253,18 @@ add(dateChooser);
         JOptionPane.showMessageDialog(null,"State is Required");
       } else if (pin.equals("")){
         JOptionPane.showMessageDialog(null,"Pin is Required");
+      }else {
+        Conn c=new Conn();
+        String query = "insert into signup (formno, name, fname, dob, gender, email, marital, address, city, state, pin) " +
+               "values ('"+formno+"', '"+name+"', '"+fname+"', '"+dob+"', '"+gender+"', '"+email+"', '"+martal+"', '"+address+"', '"+city+"', '"+state+"', '"+pin+"')";
+c.s.executeUpdate(query);
+
       }
 
     } catch(Exception e){
       System.out.println(e);
     }
+    
 
    }
   public static void main(String[] args) {
