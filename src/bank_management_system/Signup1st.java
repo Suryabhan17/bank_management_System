@@ -257,7 +257,11 @@ add(dateChooser);
         Conn c=new Conn();
         String query = "insert into signup (formno, name, fname, dob, gender, email, marital, address, city, state, pin) " +
                "values ('"+formno+"', '"+name+"', '"+fname+"', '"+dob+"', '"+gender+"', '"+email+"', '"+martal+"', '"+address+"', '"+city+"', '"+state+"', '"+pin+"')";
+               
 c.s.executeUpdate(query);
+ setVisible(false);
+ new Signup2(formno).setVisible(true);
+         
 
       }
 
