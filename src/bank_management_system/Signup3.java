@@ -12,7 +12,7 @@ public class Signup3 extends JFrame implements ActionListener {
   JButton submit, cancel;
   String formno;
 
-Signup3( ){
+Signup3(String formno){
   this.formno=formno;
   setLayout(null);
   setTitle("NEW ACCOUNT APPLICATION FORM - PAGE 3");
@@ -193,8 +193,8 @@ setLocation(350,0);
 
                 JOptionPane.showMessageDialog(null, "Card Number: " + cardnumber + "\n Pin: " + pin);
 
-                //setVisible(false);
-               // new Deposit(pin).//setVisible(true);
+               // setVisible(false);
+              // new Deposit(pin).setVisible(true);
 
             } catch (Exception e) {
                 System.out.println(e);
@@ -208,6 +208,6 @@ setLocation(350,0);
 
 
   public static void main(String args[]){
-    new Signup3();
+    new Signup3("").setVisible(true);
   }
 }
