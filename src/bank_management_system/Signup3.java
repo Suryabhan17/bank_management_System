@@ -68,7 +68,7 @@ Signup3( ){
   add(card);
 
 
-  JLabel number=new JLabel("xxxx-xxxx-xxxx-5894 :");
+  JLabel number=new JLabel("XXXX-XXXX-XXXX-5894 :");
   number.setFont(new Font("Raleway",Font.BOLD,20));
   number.setBounds(330,300,300,30);
   add(number);
@@ -83,8 +83,13 @@ Signup3( ){
 
   JLabel pin =new JLabel("PIN :");
   pin.setFont(new Font("Raleway",Font.BOLD,20));
-  pin.setBounds(100,370,200,300);
+  pin.setBounds(100,370,200,30);
   add(pin);
+
+  JLabel pin4 =new JLabel("XXXX");
+  pin4.setFont(new Font("Raleway",Font.BOLD,20));
+  pin4.setBounds(330,370,300,30);
+  add(pin4);
 
   JLabel pindetail2=new JLabel("4 Digit Password");
   pindetail2.setFont(new Font("Raleway",Font.PLAIN,12));
