@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.*;
+import java.sql.*;
 
 
 
@@ -88,7 +89,23 @@ JPasswordField PinTextField;
             PinTextField.setText("");
 
         } else if(ae.getSource()== login){
+      Conn conn=new Conn();
+      String cardnumber=cardTextField.getText();
+      String pinnnumber = PinTextField.getText();
+      String query ="select * from login where cardnumber ='"+cardnumber+"' and pin ='"+pinnnumber+"' ";
 
+      try{
+      ResultSet rs= conn.s.executeQuery(query);
+      if(rs.next()){
+       setVisible(false);
+       new Transactions(pinnnumber).setVisible(true);
+      } else {
+        JOptionPane.showMessageDialog(null, "Incorrect Card Number Pin");
+      }
+      }catch(Exception e){
+        System.out.println(e);
+
+      }
 
         } else if (ae.getSource()== signup){
         setVisible(false);
