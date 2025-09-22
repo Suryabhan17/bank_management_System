@@ -70,17 +70,21 @@ public class Transactions extends JFrame implements ActionListener {
 
     setSize(900,700);
     setLocation(350,10);
-     //setUndecorated(true);
+     setUndecorated(true);
     setVisible(true);
    
   }
   public void actionPerformed(ActionEvent ae){
-    if(ae.getSource()==exit){
+    if(ae.getSource() == exit){
       System.exit(0);
-    }else if(ae.getSource() ==deposit){
+  
+
+    }  else if(ae.getSource() == deposit){
       setVisible(false);
       new Deposit(pinnumber).setVisible(true);
-    }else if(ae.getSource()==withdrow){
+
+
+    }/* else if(ae.getSource()==withdrow){
       setVisible(false);
       new Withdraw(pinnumber).setVisible(true);
 
@@ -95,7 +99,7 @@ public class Transactions extends JFrame implements ActionListener {
             new BalanceEnquiry(pinnumber).setVisible(true);
         } else if (ae.getSource() == ministatement) {
             new MiniStatement(pinnumber).setVisible(true);
-        }
+        }*/
 
   }
 

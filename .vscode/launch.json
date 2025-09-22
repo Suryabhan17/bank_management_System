@@ -1,0 +1,56 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Deposit",
+      "request": "launch",
+      "mainClass": "bank_management_system.Deposit",
+      "projectName": "bank_management_System_d2f73d42"
+    },
+    {
+      "type": "java",
+      "name": "Login",
+      "request": "launch",
+      "mainClass": "bank_management_system.Login",
+      "projectName": "bank_management_System_d2f73d42"
+    },
+    {
+      "type": "java",
+      "name": "Signup1st",
+      "request": "launch",
+      "mainClass": "bank_management_system.Signup1st",
+      "projectName": "bank_management_System_d2f73d42"
+    },
+    {
+      "type": "java",
+      "name": "Signup2",
+      "request": "launch",
+      "mainClass": "bank_management_system.Signup2",
+      "projectName": "bank_management_System_d2f73d42"
+    },
+    {
+      "type": "java",
+      "name": "Signup3",
+      "request": "launch",
+      "mainClass": "bank_management_system.Signup3",
+      "projectName": "bank_management_System_d2f73d42"
+    },
+    {
+      "type": "java",
+      "name": "Transactions",
+      "request": "launch",
+      "mainClass": "bank_management_system.Transactions",
+      "projectName": "bank_management_System_d2f73d42"
+    }
+  ]
+}
