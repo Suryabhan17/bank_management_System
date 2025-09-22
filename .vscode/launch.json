@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Withdraw",
+      "request": "launch",
+      "mainClass": "bank_management_system.Withdraw",
+      "projectName": "bank_management_System_d2f73d42"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}"

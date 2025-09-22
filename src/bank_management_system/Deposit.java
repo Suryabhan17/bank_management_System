@@ -17,25 +17,33 @@ public class Deposit extends JFrame implements ActionListener {
 
         setLayout(null);
 
+         ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/atm.jpg"));
+    Image i2=i1.getImage().getScaledInstance(700,600,Image.SCALE_DEFAULT);
+    ImageIcon i3=new ImageIcon(i2);
+    JLabel image=new JLabel(i3);
+    image.setBounds(0,0,700,600);
+    add(image);
+
         JLabel text = new JLabel("Enter amount you want to deposit");
         text.setFont(new Font("System", Font.BOLD, 16));
-        text.setBounds(170, 200, 400, 20);
-        add(text);
+        text.setBounds(135, 200, 400, 20);
+        text.setForeground(Color.white);
+        image.add(text);
 
         amountTextField = new JTextField();
         amountTextField.setFont(new Font("Raleway", Font.BOLD, 22));
-        amountTextField.setBounds(170, 250, 320, 30);
-        add(amountTextField);
+        amountTextField.setBounds(135, 250, 250, 30);
+        image.add(amountTextField);
 
         depositBtn = new JButton("Deposit");
-        depositBtn.setBounds(250, 320, 100, 30);
+        depositBtn.setBounds(135, 320, 100, 30);
         depositBtn.addActionListener(this);
-        add(depositBtn);
+        image.add(depositBtn);
 
         backBtn = new JButton("Back");
-        backBtn.setBounds(370, 320, 100, 30);
+        backBtn.setBounds(285, 320, 100, 30);
         backBtn.addActionListener(this);
-        add(backBtn);
+        image.add(backBtn);
 
         getContentPane().setBackground(Color.WHITE);
 

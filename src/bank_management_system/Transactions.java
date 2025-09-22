@@ -84,11 +84,11 @@ public class Transactions extends JFrame implements ActionListener {
       new Deposit(pinnumber).setVisible(true);
 
 
-    }/* else if(ae.getSource()==withdrow){
+    } else if(ae.getSource()==withdrow){
       setVisible(false);
       new Withdraw(pinnumber).setVisible(true);
 
-    }else if(ae.getSource()==fastcash){
+    } /*else if(ae.getSource()==fastcash){
         setVisible(false);
         new FastCash(pinnumber).setVisible(true);
     } else if (ae.getSource() == pinchange) {
