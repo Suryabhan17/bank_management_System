@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BalanceEnquiry",
+      "request": "launch",
+      "mainClass": "bank_management_system.BalanceEnquiry",
+      "projectName": "bank_management_System_d2f73d42"
+    },
+    {
+      "type": "java",
       "name": "PinChange",
       "request": "launch",
       "mainClass": "bank_management_system.PinChange",

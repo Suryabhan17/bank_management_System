@@ -3,7 +3,7 @@ package bank_management_system;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.sql.*;
+//import java.sql.*;
 
 public class PinChange extends JFrame implements ActionListener {
 

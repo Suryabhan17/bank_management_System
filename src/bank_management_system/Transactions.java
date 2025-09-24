@@ -22,10 +22,6 @@ public class Transactions extends JFrame implements ActionListener {
     image.setBounds(0,0,900,700);
     add(image);
 
-
-
-
-
     
     JLabel text=new JLabel("Please Select Your Transaction");
     text.setFont(new Font("System",Font.BOLD,22));
@@ -95,10 +91,10 @@ public class Transactions extends JFrame implements ActionListener {
     }  else if (ae.getSource() == pinchange) {
             setVisible(false);
             new PinChange(pinnumber).setVisible(true);
-        }/*  else if (ae.getSource() == balanceenquiry) {
+        }  else if (ae.getSource() == balanceenquiry) {
             setVisible(false);
             new BalanceEnquiry(pinnumber).setVisible(true);
-        } else if (ae.getSource() == ministatement) {
+        } /*else if (ae.getSource() == ministatement) {
             new MiniStatement(pinnumber).setVisible(true);
         }*/
 
